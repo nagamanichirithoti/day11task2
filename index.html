@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="formvalid">
+        <form action="../day7/index.html">
+            <h1>Form validation application</h1>
+            <div>
+                <label for="name">FirstName:</label>
+                <input type="text" id="name" name="name" placeholder="EnterFirstName" maxlength="10" required />
+            </div>
+            <div>
+                <label for="name_1">LastName:</label>
+                <input type="text" id="name_1" name="name_1" placeholder="EnterLastName" disabled />
+            </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" placeholder="password required "/>
+            </div>
+            <div>
+                <label for="confpass">Confirm Password:</label>
+                <input type="password" id="confpass" name="confpass" placeholder="confirmPassword" required />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="EnterEmail" required />
+            </div>
+
+                <div>
+                    <label for="files">Files:</label>
+                    <input type="file" id="files" name="files" multiple />
+                  </div>
+              <div>
+                <label type="mele">Mele</label>
+                <input type="radio" id="mele" name="gender"/>
+              </div>
+              <div>
+                <label type="femele">Femele</label>
+                <input type="radio" id="femele" name="gender" />
+                </div>
+              <div>
+               <input type="checkbox" id="check" name="check" required />i agree to the and condition and policy
+              </div>
+              
+              <div>
+                <label for="lists">Choose:</label>
+                  <select name="lists" id="lists">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="java">JAVA</option>
+                    <option value="react">REACT</option>
+                </select>
+              </div>
+            <div>
+              <button type="submit">submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
